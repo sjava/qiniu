@@ -23,7 +23,7 @@ defmodule Qiniu.Mixfile do
 
   defp deps do
     [{:poison, "~> 2.2"},
-     {:httpoison, "~> 0.10"},
+     {:httpoison, "~> 1.0"},
      {:ex_doc, "~> 0.16", only: :docs},
      {:excoveralls, "~> 0.6", only: :test},
      {:earmark, "~> 1.2", only: :docs},
