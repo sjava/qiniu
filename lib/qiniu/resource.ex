@@ -60,8 +60,8 @@ defmodule Qiniu.Resource do
   """
   def batch(ops) do
     params = Enum.map_join(ops, "&", &("op=" <> apply(__MODULE__, :op_path, &1)))
-    url = Qiniu.config[:rs_host] <> "?" <> params
-    auth_post(url)
+    url = Qiniu.config[:rs_host] <> "/batch"
+    auth_post(url, params)
   end
 
   @doc """
