@@ -44,7 +44,7 @@ defmodule Qiniu.Mixfile do
   end
 
   defp preferred_cli_env do
-    ["coveralls": :test, "coveralls.travis": :test, "coveralls.html": :test]
+    [coveralls: :test, "coveralls.travis": :test, "coveralls.html": :test]
   end
 
 end
